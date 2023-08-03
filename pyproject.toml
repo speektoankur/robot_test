@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "robot-test"
+version = "0.1.0"
+description = "Robot Framework Tests"
+authors = ["Ankur <speektoankur@gmail.com>"]
+readme = "README.md"
+packages = [{include = "robot_test"}]
+
+[tool.poetry.dependencies]
+python = "3.9"
+robotframework = "^6.1.1"
+robotframework-browser = "^17.2.0"
+robotframework-requests = "^0.9.5"
+robotframework-seleniumlibrary = "^6.1.0"
+webdriver-manager = "^4.0.0"
+requests = "^2.31.0"
+robotframework-jsonlibrary = "^0.5"
+robotframework-jsonschemalibrary = "^1.0"
+robotframework-pabot = "^2.16.0"
+robotframework-retryfailed = "^0.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
