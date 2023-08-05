@@ -15,14 +15,17 @@ jobs:
           name: Installing Requirements
           command: pip install -r requirements.txt
       - run:
-          name: Apt - GET 
-          command: sudo apt-get install -y wget
+          command: sudo dpkg-reconfigure --all
       - run:
-          name: Pulling Stable Chrome 
-          command: sudo wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+          command: sudo apt install -f
       - run:
-          name: Installing Chrome 
-          command: sudo apt install ./google-chrome-stable_current_amd64.deb
+          command: sudo dpkg -i /root/Downloads/google-chrome-stable_current_amd64.deb
+      - run:
+          command: sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
+      - run:
+          command: sudo sh -c 'echo "deb https://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+      - run:
+          command: sudo apt update && sudo apt install google-chrome-stable -y
       - run:
           name: Running Tests
           command: robot ebay.search.tests.robot
