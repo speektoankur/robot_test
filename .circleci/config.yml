@@ -12,9 +12,6 @@ jobs:
           name: Installing Poetry
           command: curl -sSL https://install.python-poetry.org | python3 -
       - run:
-          name: Installing Dependencies
-          command: poetry install
-      - run:
           name: Current Directory check
           command: ls
 
