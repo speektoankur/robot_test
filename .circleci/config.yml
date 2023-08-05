@@ -15,9 +15,6 @@ jobs:
           name: Installing Requirements
           command: pip install -r requirements.txt
       - run:
-          name: Robot Version Check
-          command: robot --version
-      - run:
           name: Apt - GET 
           command: apt-get install -y wget
       - run:
