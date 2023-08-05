@@ -15,6 +15,7 @@ jobs:
           name: Installing Dependencies
           command: poetry install
       - run:
-          name: Robot Version Check
-          command: robot --version
+          name: Current Directory check
+          command: ls
+
 
