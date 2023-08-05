@@ -538,13 +538,13 @@ cli = ["click (>=5.0)"]
 
 [[package]]
 name = "referencing"
-version = "0.30.0"
+version = "0.30.1"
 description = "JSON Referencing + Python"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "referencing-0.30.0-py3-none-any.whl", hash = "sha256:c257b08a399b6c2f5a3510a50d28ab5dbc7bbde049bcaf954d43c446f83ab548"},
-    {file = "referencing-0.30.0.tar.gz", hash = "sha256:47237742e990457f7512c7d27486394a9aadaf876cbfaa4be65b27b4f4d47c6b"},
+    {file = "referencing-0.30.1-py3-none-any.whl", hash = "sha256:185d4a29f001c6e8ae4dad3861e61282a81cb01b9f0ef70a15450c45c6513a0d"},
+    {file = "referencing-0.30.1.tar.gz", hash = "sha256:9370c77ceefd39510d70948bbe7375ce2d0125b9c11fd380671d4de959a8e3ce"},
 ]
 
 [package.dependencies]
@@ -710,19 +710,19 @@ robotframework = ">=4.1"
 
 [[package]]
 name = "robotframework-seleniumlibrary"
-version = "6.1.0"
+version = "6.1.1"
 description = "Web testing library for Robot Framework"
 optional = false
 python-versions = ">=3.6, <4"
 files = [
-    {file = "robotframework-seleniumlibrary-6.1.0.tar.gz", hash = "sha256:64686f6aa98b1fd1c340715c0adf8c09b6b405564086fbe672de31498a26ff0e"},
-    {file = "robotframework_seleniumlibrary-6.1.0-py2.py3-none-any.whl", hash = "sha256:bba1e9f728d96691d8032e32a292f960bfc73b840690693957916fd93125efbf"},
+    {file = "robotframework-seleniumlibrary-6.1.1.tar.gz", hash = "sha256:a62262f1e2f9cba34537fe391d06e7253504efd31fe3914c417a63aa9919a7ee"},
+    {file = "robotframework_seleniumlibrary-6.1.1-py2.py3-none-any.whl", hash = "sha256:2c0c94b21aec948d1bdff7c77249783b3836718d8c45ca83cc91b481243fed5c"},
 ]
 
 [package.dependencies]
 robotframework = ">=4.1.3"
 robotframework-pythonlibcore = ">=3.0.0"
-selenium = ">=4.0.0"
+selenium = ">=4.3.0"
 
 [[package]]
 name = "robotframework-stacktrace"

@@ -12,7 +12,10 @@ jobs:
           name: Installing Poetry
           command: curl -sSL https://install.python-poetry.org | python3 -
       - run:
-          name: Current Directory check
-          command: ls
+          name: Poetry lock file writing
+          command: poetry lock
+      - run:
+          name: Poetry Installing
+          command: poetry install
 
 
