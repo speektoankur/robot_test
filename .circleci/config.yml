@@ -17,5 +17,21 @@ jobs:
       - run:
           name: Robot Version Check
           command: robot --version
+      - run:
+          name: Apt - GET 
+          command: apt-get install -y wget
+      - run:
+          name: Pulling Stable Chrome 
+          command: wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+      - run:
+          name: Installing Chrome 
+          command: apt-get install ./google-chrome-stable_current_amd64.deb
+      - run:
+          name: Running Tests
+          command: robot ebay.search.tests.robot
+      - run:
+          name: Check Results
+          command: ls
+
 
 
