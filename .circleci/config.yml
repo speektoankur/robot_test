@@ -1,0 +1,21 @@
+version: 2.1
+jobs:
+  build:
+    docker:
+      - image: cimg/python:3.9.0
+    steps:
+      - checkout
+      - run:
+          name: Checking Python Installed
+          command: python --version
+      - run:
+          name: Installing Poetry
+          command: curl -sSL https://install.python-poetry.org | python3 -
+                   poetry --version
+      - run:
+          name: Installing Dependencies
+          command: poetry install
+      - run:
+          name: Robot Version Check
+          command: robot --version
+
