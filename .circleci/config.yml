@@ -12,13 +12,8 @@ jobs:
           name: Upgrading PIP
           command: pip install --upgrade pip
       - run:
-          name: Installing Poetry
-          command: curl -sSL https://install.python-poetry.org | python3 -
-      - run:
-          name: Poetry lock file writing
-          command: poetry lock
-      - run:
-          name: Poetry Installing
-          command: ls & poetry install
+          name: Installing Requirements
+          command: pip install -r requirements.txt
+
 
 
