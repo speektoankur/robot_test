@@ -22,7 +22,7 @@ jobs:
           command: sudo wget -q https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
       - run:
           name: Installing Chrome 
-          command: sudo apt install ./root/Downloads/google-chrome-stable_current_amd64.deb
+          command: sudo apt install ./google-chrome-stable_current_amd64.deb
       - run:
           name: Running Tests
           command: robot ebay.search.tests.robot
