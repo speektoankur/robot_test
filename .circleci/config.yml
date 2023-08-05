@@ -19,6 +19,6 @@ jobs:
           command: poetry lock
       - run:
           name: Poetry Installing
-          command: poetry install
+          command: ls & poetry install
 
 
