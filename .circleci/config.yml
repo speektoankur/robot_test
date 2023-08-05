@@ -9,6 +9,9 @@ jobs:
           name: Checking Python Installed
           command: python --version
       - run:
+          name: Upgrading PIP
+          command: pip install --upgrade pip
+      - run:
           name: Installing Poetry
           command: curl -sSL https://install.python-poetry.org | python3 -
       - run:
