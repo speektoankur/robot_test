@@ -18,9 +18,8 @@ jobs:
       - run:
           name: Running Tests
           command: robot tests/ebay.search.tests.robot
-      - run:
-          name: Check Results
-          command: ls
+      - store_artifacts:
+          path: /home/circleci/project/report.html
 
 
 
