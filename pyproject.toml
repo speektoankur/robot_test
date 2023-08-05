@@ -7,7 +7,7 @@ readme = "README.md"
 packages = [{include = "robot_test"}]
 
 [tool.poetry.dependencies]
-python = "3.9"
+python = "^3.8"
 robotframework = "^6.1.1"
 robotframework-browser = "^17.2.0"
 robotframework-requests = "^0.9.5"
