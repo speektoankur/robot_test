@@ -20,6 +20,7 @@ jobs:
           command: robot tests/ebay.search.tests.robot
       - store_artifacts:
           path: /home/circleci/project/report.html
-
+      - store_artifacts:
+          path: /home/circleci/project/log.html
 
 

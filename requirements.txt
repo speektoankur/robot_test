@@ -9,3 +9,4 @@ robotframework-jsonlibrary==0.5
 robotframework-jsonschemalibrary==1.0
 robotframework-pabot==2.16.0
 robotframework-retryfailed==0.2.0
+selenium==4.9.0
