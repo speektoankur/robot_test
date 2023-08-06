@@ -1,6 +1,6 @@
 
 *** Settings ***
-Library  SeleniumLibrary
+Library  Selenium2Library
 Library  Collections
 Resource  page-objects/ebay-landing-page.robot
 Resource  page-objects/smart-phones-page.robot
@@ -10,7 +10,7 @@ Suite Setup  Run Keywords
 Suite Teardown  Run Keywords    Close Browser
 
 *** Variables ***
-${BROWSER}        chrome
+${BROWSER}        Chrome
 ${URL}            https://www.ebay.com/
 @{expectedfilters}       3 filters applied   Brand   Lock Status   Screen Size
 
